@@ -7,8 +7,9 @@ window.onmousemove = (event) => {
     })
 }
 
+
 document.getElementById('rocket').addEventListener('mouseout', function() {
-  document.body.style.cursor = 'auto';
+  document.body.style.cursor = 'none';
 });
 
 const rocket = document.getElementById('rocket');

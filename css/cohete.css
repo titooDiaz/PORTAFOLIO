@@ -2,7 +2,7 @@
     position: absolute;
     transition: left 0s ease-out, top 0s ease-out;
     left: -100px;
-    z-index: 10;
+    z-index: 100;
   }
   
   .rocket img {

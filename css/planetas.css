@@ -82,11 +82,25 @@ to {
     transform: translate(-50%, -50%);
     -webkit-animation: stars 90s ease-in-out infinite;
     animation: stars 90s ease-in-out infinite;
+    transition: 0.2s ease;
     z-index: 100;}
   
   .luna:hover img{
-    transition: 0.2s ease;
     scale: 1.2;
+  }
+  .tooltip {
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 4px;
+    visibility: hidden;
+    position: absolute;
+    width: 16%;
+    top: 36%;
+    left: 60%;
+  }
+  
+  .luna:hover .tooltip {
+    visibility: visible;
   }
   
   .saturnoBrillo {
