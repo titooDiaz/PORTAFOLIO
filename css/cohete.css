@@ -1,0 +1,12 @@
+.rocket {
+    position: absolute;
+    transition: left 0s ease-out, top 0s ease-out;
+    left: -100px;
+    z-index: 10;
+  }
+  
+  .rocket img {
+    width: 40px;
+    transform-origin: bottom center;
+    transition: transform 0s ease-out;
+  }

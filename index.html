@@ -6,46 +6,51 @@
     <title>Portafolio de MIGUEL ANGEL DIAZ</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/planetas.css">
 </head>
 <body>
     <div class="blur"></div>
     <div id="particles-js"></div>
     <div class="circle move" data-value="1"></div>
     <div class="circle move" data-value="-1"></div>
-    <div class="circle move" data-value="-1"></div>
+
     
 
     <div class="stars" >
         <img src="img/estrellas.png" alt="Stars_img">
     </div>
 
-    <div class="rocket" id="rocket"><img src="img/astronave.png" alt=""></div>
+    <div class="rocket" id="rocket">
+        <img src="img/astronave.png" alt="">
+    </div>
 
         <div>
             <h1 class=" titulo">MI PORTAFOLIO</h1>
         </div>    
 
-        <div class="luna move" data-value="1">
+        <div class="luna">
             <div class="lunaBrillo"></div>
             <img src="img/luna.png" alt="luna">
         </div>
 
-        <div class="saturno move" data-value="1">
+        <div id="overlay" class="overlay"></div>
+
+        <div class="saturno">
             <div class="saturnoBrillo"></div>
             <img src="img/saturno.png" alt="luna">
         </div>
 
-        <div class="marte move" data-value="-1">
+        <div class="marte">
             <div class="marteBrillo" ></div>
             <img src="img/marte.png" alt="marte">
         </div>
 
-        <div class="jupiter move" data-value="1">
+        <div class="jupiter">
             <div class="jupiterBrillo" ></div>
             <img src="img/jupiter.png" alt="jupiter">
         </div>
 
-        <div class="neptuno move" data-value="-2">
+        <div class="neptuno">
             <div class="neptunoBrillo" ></div>
             <img src="img/neptuno.png" alt="neptuno">
         </div>
@@ -60,3 +65,26 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+
+<!--
+
+    const overlay = document.getElementById('overlay');
+const lunaImg = document.querySelector('.luna img');
+let countdownInterval;
+
+lunaImg.addEventListener('mouseover', (event) => {
+  overlay.style.display = 'flex';
+  let count = 5;
+  overlay.textContent = `Contador: ${count}s`;
+
+  countdownInterval = setInterval(() => {
+    count--;
+    overlay.textContent = `Contador: ${count}s`;
+
+    if (count === 0) {
+      clearInterval(countdownInterval);
+      overlay.style.display = 'none';
+    }
+  }, 700);
+});
+-->

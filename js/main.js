@@ -1,12 +1,15 @@
 window.onmousemove = (event) => {
     document.querySelectorAll('.move').forEach(element => {
         const data = element.getAttribute('data-value')
-        const x = (window.innerWidth - event.pageX * data) / 80
-        const y = (window.innerHeight - event.pageY * data) / 80
+        const x = (window.innerWidth - event.pageX * data) / 100
+        const y = (window.innerHeight - event.pageY * data) / 100
         element.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 }
 
+document.getElementById('rocket').addEventListener('mouseout', function() {
+  document.body.style.cursor = 'auto';
+});
 
 const rocket = document.getElementById('rocket');
 const rocketImage = rocket.querySelector('img');
@@ -27,6 +30,7 @@ document.addEventListener('mousemove', (e) => {
   const rocketX = rocket.offsetLeft + (targetRocketX - rocket.offsetLeft);
   const rocketY = rocket.offsetTop + (targetRocketY - rocket.offsetTop);
 
+
   rocket.style.left = `${rocketX}px`;
   rocket.style.top = `${rocketY}px`;
 
@@ -35,6 +39,3 @@ document.addEventListener('mousemove', (e) => {
 
   rocketImage.style.transform = `rotate(${rotation}deg) scaleY(1)`;
 });
-
-
-
