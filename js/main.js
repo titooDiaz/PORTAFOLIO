@@ -40,3 +40,65 @@ document.addEventListener('mousemove', (e) => {
 
   rocketImage.style.transform = `rotate(${rotation}deg) scaleY(1)`;
 });
+
+
+
+///OVERLAY
+const overlay = document.getElementById('overlay');
+
+
+///INICIO DE HOVER DE PLANETAS///
+const lunaImg = document.querySelector('.luna img');
+
+lunaImg.addEventListener('mouseover', () => {
+  overlay.style.display = 'flex';
+});
+
+lunaImg.addEventListener('mouseout', () => {
+  overlay.style.display = 'none';
+});
+
+  ///SATURNO
+const saturnoImg = document.querySelector('.saturno img');
+
+saturnoImg.addEventListener('mouseover', () => {
+  overlay.style.display = 'flex';
+});
+
+saturnoImg.addEventListener('mouseout', () => {
+  overlay.style.display = 'none';
+});
+
+  ///MARTE
+const marteImg = document.querySelector('.marte img');
+
+marteImg.addEventListener('mouseover', () => {
+  overlay.style.display = 'flex';
+});
+
+marteImg.addEventListener('mouseout', () => {
+  overlay.style.display = 'none';
+});
+
+  ///JUPITER
+const jupiterImg = document.querySelector('.jupiter img');
+
+jupiterImg.addEventListener('mouseover', () => {
+  overlay.style.display = 'flex';
+});
+
+jupiterImg.addEventListener('mouseout', () => {
+  overlay.style.display = 'none';
+});
+
+  ///NEPTUNO
+const neptunoImg = document.querySelector('.neptuno img');
+
+neptunoImg.addEventListener('mouseover', () => {
+  overlay.style.display = 'flex';
+});
+
+neptunoImg.addEventListener('mouseout', () => {
+  overlay.style.display = 'none';
+});
+///FIN DE HOVER DE PLANETAS///
