@@ -13,6 +13,6 @@ document.getElementById('LunaEnlace').addEventListener('click', function(event) 
     rocket.style.display = 'none';
 
     setTimeout(function() {
-        window.location.href = 'templates/contact.html';
+        window.location.href = 'https://github.com/titooUvU';
     }, 4600);
 });
