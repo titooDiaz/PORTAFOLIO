@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="css/cohete.css">
 </head>
 <body>
+    <style>
+        object {
+          width: 100%;
+          height: 100vh; /* Utiliza la altura de la ventana del navegador */
+          z-index: 9999;
+        }
+        #miObjeto{
+            display: none;
+        }
+      </style>
+    <div id="miObjeto" class="objeto">
+        <object type="text/html" data="templates/viaje.html"></object>
+    </div>
+
     <div class="blur"></div>
     <div id="particles-js"></div>
     <div class="circle move" data-value="1"></div>
@@ -23,16 +37,21 @@
     </div>
 
     <div class="rocket" id="rocket">
-        <img src="img/astronave.png" alt="">
+        <img src="img/astronave.png">
     </div>
 
         <div>
-            <h1 class=" titulo">MI PORTAFOLIO</h1>
-        </div>    
+            <h1 class="titulo" id="title">MI PORTAFOLIO</h1>
+        </div>
+        <div>
+            <h1 class="titulo" id="titleTravel" style="display: none;">Preparando Viaje</h1>
+        </div>   
 
         <div class="luna">
             <div class="lunaBrillo"></div>
-            <img src="img/luna.png" alt="luna">
+            <a id="LunaEnlace">
+                <img src="img/luna.png" alt="luna">
+            </a>
             <div class="lunaMsg">
                 <span>
                     <h3>
@@ -112,11 +131,8 @@
             </div>
         </div>
 
-
-    <a href='https://github.com/titooUvU'>Portafolio de Miguel Angel Diaz Riatiga</a>
-    
-
     <!-- Scripts -->
+    <script src="js/redirect.js"></script>
     <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  cursor: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#1a1641), to(#2a246d));
+  background: -webkit-linear-gradient(left, #1a1641 0%, #2a246d 100%);
+  background: -o-linear-gradient(left, #1a1641 0%, #2a246d 100%);
+  background: linear-gradient(90deg, #1a1641 0%, #2a246d 100%); }
+
+#particles-js{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.nave{
+    z-index: 100;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: auto;
+    animation: despegue 5s ease;
+}
+
+@keyframes despegue {
+    0% {
+        top: 70%;
+        left: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    80% {
+        top: 20%;
+    }
+    100% {
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+.tierra{
+    z-index: 90;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    width: 30%;
+    height: auto;
+}
