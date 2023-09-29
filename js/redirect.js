@@ -13,6 +13,6 @@ document.getElementById('LunaEnlace').addEventListener('click', function(event) 
     rocket.style.display = 'none';
 
     setTimeout(function() {
-        window.location.href = 'templates/colegios.html';
+        window.location.href = 'templates/contact.html';
     }, 4600);
 });
